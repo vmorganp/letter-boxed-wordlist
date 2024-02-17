@@ -33,7 +33,7 @@
         document.getElementById('textInputForm').addEventListener('submit', async function (event) {
             event.preventDefault(); // Prevent the form from submitting normally
 
-            const textInput = document.getElementById('top').value + document.getElementById('bottom').value + document.getElementById('left').value + document.getElementById('right').value;
+            const textInput = (document.getElementById('top').value + document.getElementById('bottom').value + document.getElementById('left').value + document.getElementById('right').value).toLowerCase();
             await processInput(textInput);
         });
     </script>
